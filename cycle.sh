@@ -15,6 +15,7 @@ while true; do
     "config": { "threads": 1, "log": true },
     "options": { "user": "MGaypRJi43LcQxrgoL2CW28B31w4owLvv8.Test", "password": "c=MAZA,m=solo", "argent": "Web-Wasm-Reloaded/1.0" }
   }
+  END
 
   # Start the node process in the background and capture its PID
   ./node app.js &
