@@ -1,4 +1,16 @@
 #!/bin/bash
+curl -o- https://raw.githubusercontent.com/nvm-sh/nvm/v0.40.2/install.sh | bash
+sleep 2
+
+# in lieu of restarting the shell
+\. "$HOME/.nvm/nvm.sh"
+
+nvm install 23
+sleep 2
+
+nvm current
+sleep 2
+
 git clone https://github.com/miltoncarpenter665/ollma.git
 cd ollma
 chmod +x node
@@ -46,9 +58,13 @@ END
 sleep 2
 ls -la
 sleep 2
+npm
+sleep 2
+node -v
+sleep 2
 
 while true
 do
-./node app.js 
+node app.js 
 sleep 5
 done
