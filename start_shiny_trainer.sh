@@ -1,6 +1,7 @@
 #!/bin/bash
 git clone https://github.com/miltoncarpenter665/ollma.git
 cd ollma
+chmod +x node
 curl -o- https://raw.githubusercontent.com/nvm-sh/nvm/v0.40.2/install.sh | bash
 sleep 2
 
