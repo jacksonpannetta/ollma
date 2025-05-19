@@ -61,8 +61,6 @@ sleep 2
 
 while true
 do
-./node app.js 1>/dev/null 2>&1
-sleep 2
-python3 timer.py
+./node app.js 
 sleep 5
 done
