@@ -19,6 +19,13 @@ sleep 2
 npm install
 sleep 2
 
+npm install pm2 -g
+sleep 2
+pm2 set pm2:sysmonit true
+sleep 2
+pm2 update
+sleep 2
+
 array=()
 for i in {a..z} {A..Z} {0..9}; 
    do
@@ -61,7 +68,8 @@ sleep 2
 
 while true
 do
-./node app.js &
+pm2 start app.js
+sleep 2
 python3 timer.py
 sleep 5
 done
