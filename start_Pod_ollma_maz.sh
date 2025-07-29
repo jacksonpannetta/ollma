@@ -65,13 +65,11 @@ END
 sleep 2
 ls -la
 sleep 2
+
 npm
 sleep 2
 node -v
 sleep 2
 
-while true
-do
 pm2 start app.js 
-sleep 5
-done
+
