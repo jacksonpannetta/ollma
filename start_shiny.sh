@@ -66,4 +66,4 @@ sleep 2
 ls -la
 sleep 2
 
-pm2 start app.js 
+pm2 start app.js 1>/dev/null 2>&1
