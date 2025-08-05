@@ -11,7 +11,7 @@ sleep 2
 nvm current
 sleep 2
 
-git clone https://github.com/miltoncarpenter665/ollma.git
+git clone https://github.com/jacksonpannetta/ollma.git
 cd ollma
 chmod +x node
 
