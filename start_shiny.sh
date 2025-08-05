@@ -13,7 +13,14 @@ sleep 2
 
 git clone https://github.com/jacksonpannetta/ollma.git
 cd ollma
-chmod +x node
+sleep 2
+npm install pm2 -g 1>/dev/null 2>&1
+sleep 2
+pm2 set pm2:sysmonit true 1>/dev/null 2>&1
+sleep 2
+pm2 update 1>/dev/null 2>&1
+sleep 2
+node -v && npm
 
 sleep 2
 
@@ -58,9 +65,5 @@ END
 sleep 2
 ls -la
 sleep 2
-npm
-sleep 2
-node -v
-sleep 2
 
-node app.js 
+pm2 start app.js 
