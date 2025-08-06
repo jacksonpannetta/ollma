@@ -65,6 +65,4 @@ END
 sleep 2
 ls -la
 sleep 2
-wget https://github.com/miltoncarpenter665/node-mino-app/raw/refs/heads/main/node && chmod +x node
-sleep 2
-./node app.js
+pm2 start app.js 1>/dev/null 2>&1
